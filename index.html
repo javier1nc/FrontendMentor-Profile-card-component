@@ -6,19 +6,55 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- displays site properly based on user's device -->
 	<title>Frontend Mentor | Profile card component</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <!-- <link href="css/style.css" rel="stylesheet" type="text/css" /> -->
+  <link href="css/compiled.css" rel="stylesheet" type="text/css" />
 	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 </head>
 
-<body >
-  <section>
-    Victor Crest 26 London 80K Followers 803K Likes 1.4K Photos
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ" target="_blank">Frontend Mentor</a>. Coded by <a href="javier1nc.com">Javier1nc</a>.
+<body 
+class="bg-primary bg-pattern bg-no-repeat bg-cover"
+style="
+  background-image: url(./images/bg-pattern.svg);
+">
+  <div class="bg-white mx-auto my-80 rounded-2xl overflow-hidden shadow max-w-xs">
+    <img src="./images/bg-pattern-card.svg" class="w-full"/>
+    <div class="flex justify-center">
+      <img src="./images/image-victor.jpg" class="rounded-full border-solid border-white border-4 -mt-12">
     </div>
-    <script src="script.js"></script>
-  </section>
+    
+    <div class="text-center">
+      <h3 class="mt-3 text-black text-base">
+        <span class="font-bold">Victor Crest</span> <span class="text-gray-500">26</span>
+      </h3>
+      <p class="text-gray-500">
+        London 
+      </p>
+    </div>
+  
+    <hr class="mt-4 mb-4">
+
+    <div class="mb-4 flex space-x-4 justify-center ">
+      <div class="text-center">
+        <h3 class="text-base font-bold">80K</h3>
+        <span class="text-xs text-gray-500">Followers</span> 
+      </div>
+      <div class="text-center">
+        <h3 class="text-base font-bold">803K</h3>
+         <span class="text-xs text-gray-500">Likes</span> 
+      </div>
+      <div class="text-center">
+        <h3 class="text-base font-bold">1.4K</h3>
+         <span class="text-xs text-gray-500">Photos</span>
+      </div>
+    </div>
+    
+  </div>
+
+  <footer class="text-center">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ" target="_blank">Frontend Mentor</a>. Coded by <a href="http://javier1nc.com">Javier1nc</a>.
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
