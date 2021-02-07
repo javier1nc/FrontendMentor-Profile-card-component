@@ -166,8 +166,8 @@ npm i -D @fullhuman/postcss-purgecss postcss
 In `postcss.config.js`:
 
 ```JavaScript
-const purgecss = require('@fullhuman/postcss-purgecss')
 
+const purgecss = require('@fullhuman/postcss-purgecss')
 module.exports = {
   plugins: [
     purgecss({
@@ -182,6 +182,7 @@ module.exports = {
       defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
     }),
   ]
+}
 ```
 ## cssnano
 
